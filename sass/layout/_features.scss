@@ -1,0 +1,37 @@
+.feature__title {
+    @include font(700, 14px);
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature__title-card {
+    width: 270px;
+}
+
+.feature__title-text {
+    @include font(400, 14px);
+    line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature__list {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 0;
+
+    .feature__title {
+        color: var(--title-text);
+    }
+}
+
+.feature__list-icon {
+    @extend %align;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bcg-color-button);
+    border-radius: 4px;
+}

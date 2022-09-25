@@ -1,0 +1,27 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixin';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+@import './components/_logo.scss';
+@import './components/auth-nav';
+@import './components/button';
+@import './components/submit-btn';
+@import './components/section-title';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+@import './layout/header';
+@import './layout/site-nav';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/photo-work';
+@import './layout/our-team';
+@import './layout/filter-cards';
+@import './layout/clients';
+@import './layout/footer';

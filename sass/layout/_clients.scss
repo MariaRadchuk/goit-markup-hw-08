@@ -1,0 +1,27 @@
+.regular-clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.regular-clients__icons {
+    width: 170px;
+    height: 92px;
+}
+
+.regular-clients__icon {
+    width: 100%;
+    height: 100%;
+    @extend %align;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+    fill: currentColor;
+    transition: color var(--transition), border-color var(--transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+}
+

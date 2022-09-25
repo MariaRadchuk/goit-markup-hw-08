@@ -1,0 +1,62 @@
+.auth-nav__site-email {
+    margin-right: 50px;
+}
+
+.auth-nav {
+    @include font(500, 14px);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    margin-left: auto;
+    .auth-nav__contact {
+        color: var(--primary-text-color);
+        transition: color var(--transition);
+        padding-top: 32px;
+        padding-bottom: 32px;
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+    }
+}
+
+.auth-nav_email {
+    display: flex;
+    fill: currentColor;
+}
+
+.auth-nav__envelope {
+    margin-right: 10px;
+}
+
+.auth-nav_phone {
+    display: flex;
+    fill: currentColor;
+}
+
+.auth-nav__smartphone {
+    margin-right: 10px;
+}
+
+.footer__site-contacts {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer__contacts {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer__tel {
+    margin-top: 0;
+    margin-bottom: 0;
+}

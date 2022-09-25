@@ -1,0 +1,40 @@
+.site-nav__item {
+    position: relative;
+}
+
+.site-nav {
+    margin-left: 93px;
+    @include font(500, 14px);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    column-gap: 50px;
+
+    .site-nav__link {
+        color: var(--title-text);
+        display: inline-block;
+        transition: color var(--transition);
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+.site-nav__link.site-nav__current {
+    color: var(--accent-color);
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    }
+}

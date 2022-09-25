@@ -1,0 +1,32 @@
+.photos {
+    padding-top: 0;
+}
+
+.photos__img {
+    display: flex;
+    column-gap: 30px;
+}
+
+.photos__section-img {
+    position: relative;
+}
+
+.photos__overlay-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    @include font(700, 14px);
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    color: var(--primary-white-color);
+    background-color: var(--overlay-photo);
+}
+
+
+
