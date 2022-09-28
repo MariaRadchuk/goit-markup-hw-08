@@ -20,9 +20,9 @@
   </head>
   <body>
     <!-- шапка сайта -->
-    <header class="page-header">
-      <div class="container header-nav">
-        <nav class="page-nav">
+    <header class="header">
+      <div class="container header__nav-container">
+        <nav class="header__page-nav">
           <a class="logo" href="./index.html"
             ><span class="logo__text-web">Web</span
             ><span class="logo__text-studio">Studio</span>
@@ -43,6 +43,12 @@
           </ul>
         </nav>
 
+        <button type="button" class="open-mobile-menu-btn js-open-menu">
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <ul class="auth-nav">
           <li class="auth-nav__site-email">
             <a
@@ -61,7 +67,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="auth-nav__site-tel">
             <a
               class="auth-nav__contact auth-nav_phone"
               href="tel:+380961111111"
@@ -79,17 +85,73 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav">
+            <li class="menu-nav__item">
+              <a class="menu-nav__link menu-nav__current" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-nav__item menu-nav_item">
+              <a class="menu-nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="menu-auth-nav">
+            <li class="menu-auth-nav__contact">
+              <a class="menu-auth-nav__tel" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-auth-nav__post">
+              <a
+                class="menu-auth-nav__email"
+                href="mailto:info@devstudio.com"
+                lang="en"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list">
+            <li>
+              <a class="mobile-menu__social-list-link" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="mobile-menu__social-list-link" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="mobile-menu__social-list-link" href="#">Facebook</a>
+            </li>
+            <li>
+              <a
+                class="mobile-menu__social-list-link mobile-menu_social-list-link"
+                href="#"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- герой -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container site-hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button primary" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- особенности -->
       <!-- <section class="section feature">
@@ -736,5 +798,6 @@
       </div> -->
     <!-- </div> -->
     <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

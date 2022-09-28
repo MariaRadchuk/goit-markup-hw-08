@@ -1,3 +1,53 @@
+.auth-nav__site-email {
+    // margin-right: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.auth-nav__site-tel {
+    display: block;
+}
+
+.auth-nav {
+    @include font(500, 14px);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    // display: flex;
+    margin-left: auto;
+    align-items: center;
+
+    .auth-nav__contact {
+        color: var(--primary-text-color);
+        transition: color var(--transition);
+        fill: currentColor;
+        // padding-top: 32px;
+        // padding-bottom: 32px;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+// .auth-nav_email {
+//     display: flex;
+//     fill: currentColor;
+// }
+
+.auth-nav__envelope {
+    margin-right: 10px;
+}
+
+// .auth-nav_phone {
+//     display: flex;
+//     fill: currentColor;
+// }
+
+.auth-nav__smartphone {
+    margin-right: 10px;
+}
+
 // .auth-nav__site-email {
 //     margin-right: 50px;
 // }

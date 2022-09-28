@@ -8,7 +8,9 @@
 @import './base/container';
 
 @import './components/_logo.scss';
+@import './components/site-nav';
 @import './components/auth-nav';
+@import './components/mobile-menu';
 @import './components/button';
 @import './components/submit-btn';
 @import './components/section-title';
@@ -17,7 +19,6 @@
 @import './components/modal-form';
 
 @import './layout/header';
-@import './layout/site-nav';
 @import './layout/hero';
 @import './layout/features';
 @import './layout/photo-work';
