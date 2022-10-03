@@ -98,12 +98,11 @@
 
 .modal__form-check-field {
     margin-bottom: 30px;
-
-        display: flex;
-            align-items: center;
-            justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    @include font(400, 12px);
+    @include font(400, 7px);
     line-height: 1.17;
     letter-spacing: 0.03em;
 
@@ -145,6 +144,12 @@
 .modal__link {
     text-decoration: underline;
     color: var(--accent-color);
+}
+
+@media screen and (min-width:480px){
+    .modal__form-check-field {
+        @include font(400, 12px);
+    }
 }
 
 @media screen and (min-width:768px){
